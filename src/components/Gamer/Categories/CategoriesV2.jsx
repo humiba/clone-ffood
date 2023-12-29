@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { fakeCategories } from '../../utils/fakeCategories';
+import { fakeCategories } from '../../../utils/fakeCategories';
 import CategoryItemV2 from './CategoryItem/CategoryItemV2';
 
 export default function CategoriesV2() {

@@ -1,5 +1,5 @@
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
-import { useCategoryContext } from '../../context/CategoryContext/CategoryContext';
+import { useCategoryContext } from '../../../context/CategoryContext/CategoryContext';
 import CategoryItem from './CategoryItem/CategoryItem';
 
 function Categories() {

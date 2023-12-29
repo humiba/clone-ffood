@@ -1,5 +1,5 @@
 
-import { Categories, Cart, Services } from '../../../components';
+import { Categories, Cart, Services } from '../../../components/Gamer';
 
 function OrderService() {
   return (

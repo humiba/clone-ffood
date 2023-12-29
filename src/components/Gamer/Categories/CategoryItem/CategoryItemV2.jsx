@@ -1,7 +1,7 @@
 import { RightOutlined } from '@ant-design/icons';
 import React from 'react';
 
-import { useCategoryContext } from '../../../context/CategoryContext/CategoryContext';
+import { useCategoryContext } from '../../../../context/CategoryContext/CategoryContext';
 
 export default function CategoryItemV2({ id, name }) {
   const { selectedCategoryId, setSelectedCategoryId } = useCategoryContext();

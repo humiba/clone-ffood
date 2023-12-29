@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useCartContext } from '../../../context/CartContext/CartContext';
+import { useCartContext } from '../../../../context/CartContext/CartContext';
 import { CloseCircleOutlined, MinusOutlined, PlusOutlined } from '@ant-design/icons';
 
 export default function CartItemV2({ id, name, price, orderQuantity }) {

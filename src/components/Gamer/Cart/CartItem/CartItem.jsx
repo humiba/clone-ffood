@@ -1,6 +1,6 @@
 import { DeleteOutlined, MinusOutlined, PlusOutlined } from '@ant-design/icons';
 
-import { useCartContext } from '../../../context/CartContext/CartContext';
+import { useCartContext } from '../../../../context/CartContext/CartContext';
 
 // eslint-disable-next-line react/prop-types
 function CartItem({ id, name, price, orderQuantity }) {

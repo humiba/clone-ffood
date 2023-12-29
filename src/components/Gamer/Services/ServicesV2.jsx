@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
 import ServiceItem from './ServiceItem/ServiceItem';
-import { fakeServices } from '../../utils/fakeServices';
-import { useCategoryContext } from '../../context/CategoryContext/CategoryContext';
+import { fakeServices } from '../../../utils/fakeServices';
+import { useCategoryContext } from '../../../context/CategoryContext/CategoryContext';
 
-function Services() {
+export default function ServicesV2() {
   const [services, setServices] = useState([]);
   const { selectedCategoryId } = useCategoryContext();
 
@@ -19,7 +19,7 @@ function Services() {
   }, [selectedCategoryId]);
 
   return (
-    <div className='w-[65%] grid sm:grid-cols-2 md:grid-cols-3 gap-4 px-10'>
+    <div className='w-[70%] overflow-y-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 px-10 mb-[1rem]'>
       {services.map(({ id, img, name, price, quantity, catId, unit }) => (
         <ServiceItem
           key={id}
@@ -35,5 +35,3 @@ function Services() {
     </div>
   );
 }
-
-export default Services;

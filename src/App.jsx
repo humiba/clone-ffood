@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { CartV2, Footer, Header, LeftSidebar } from './components';
-import { OrderServiceV2 } from './pages';
+import { CartV2, Footer, Header, LeftSidebar } from './components/Gamer';
+import { GamerLayout, OrderServiceV2 } from './pages';
 import { Fragment } from 'react';
 
 function App() {
@@ -17,7 +17,10 @@ function App() {
         {/* Main content */}
         <div className='bg-[#161B28] text-[#ccc] w-[65%] h-full'>
           <Routes>
-            <Route path='/' element={<OrderServiceV2 />} />
+            {/* gamer routes (public routes) */}
+            <Route element={<GamerLayout />}>
+              <Route path='/gamer/order' element={<OrderServiceV2 />} />
+            </Route>
           </Routes>
         </div>
 

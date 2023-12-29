@@ -1,4 +1,4 @@
-import { useCartContext } from '../../../context/CartContext/CartContext';
+import { useCartContext } from '../../../../context/CartContext/CartContext';
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
 function ServiceItem({ id, img, name, price, quantity, catId, unit }) {

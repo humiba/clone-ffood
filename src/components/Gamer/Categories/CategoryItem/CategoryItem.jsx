@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { useCategoryContext } from '../../../context/CategoryContext/CategoryContext';
+import { useCategoryContext } from '../../../../context/CategoryContext/CategoryContext';
 
 function CategoryItem({ id, name }) {
   const { selectedCategoryId, setSelectedCategoryId } = useCategoryContext();

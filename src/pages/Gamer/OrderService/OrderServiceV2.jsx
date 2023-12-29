@@ -1,5 +1,5 @@
 import React from 'react';
-import { CategoriesV2, Search, ServicesV2 } from '../../../components';
+import { CategoriesV2, Search, ServicesV2 } from '../../../components/Gamer';
 
 export default function OrderServiceV2() {
   return (
