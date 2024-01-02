@@ -1,6 +1,7 @@
 {
   "name": "clone-ffood",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
@@ -28,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "electron": "electron .",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-electron": "set ELECTRON_START_URL=http://localhost:3000 && electron ."
   },
   "eslintConfig": {
     "extends": [

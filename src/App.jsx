@@ -19,7 +19,7 @@ function App() {
           <Routes>
             {/* gamer routes (public routes) */}
             <Route element={<GamerLayout />}>
-              <Route path='/gamer/order' element={<OrderServiceV2 />} />
+              <Route path='/' element={<OrderServiceV2 />} />
             </Route>
           </Routes>
         </div>

@@ -9,7 +9,7 @@ export const sidebarItems = [
     id: 1,
     title: 'Menu dịch vụ',
     Icon: ShopOutlined,
-    url: '/gamer/order',
+    url: '/',
   },
   {
     id: 2,
