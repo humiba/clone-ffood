@@ -12,7 +12,7 @@ function createWindow() {
     },
   });
 
-  const startURL = '../build/index.html';
+  const startURL = 'https://clone-ffootball.netlify.app/';
 
   mainWindow.loadURL(startURL);
 
