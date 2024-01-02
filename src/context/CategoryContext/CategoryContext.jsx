@@ -9,15 +9,22 @@ export const CategoryProvider = ({ children }) => {
   const DEFAULT_CATEGORY = 0;
 
   const [categories, setCategories] = useState([]);
+  const [currentCategory, setCurrentCategory] = useState('');
   const [selectedCategoryId, setSelectedCategoryId] =
     useState(DEFAULT_CATEGORY);
 
   const filterCategory = (categoryId) => {
-    setSelectedCategoryId(categoryId);
-  }
+    if (categoryId === DEFAULT_CATEGORY) {
+      setCurrentCategory("Tất cả");
+      setSelectedCategoryId(DEFAULT_CATEGORY);
+    } else {
+      setCurrentCategory(fakeCategories[categoryId].name);
+      setSelectedCategoryId(categoryId);
+    }
+  };
 
   useEffect(() => {
-    setCategories(fakeCategories); 
+    setCategories(fakeCategories);
   }, []);
 
   return (
@@ -29,13 +36,14 @@ export const CategoryProvider = ({ children }) => {
         selectedCategoryId,
         setSelectedCategoryId,
         filterCategory,
+        currentCategory,
+        setCurrentCategory,
       }}
     >
       {children}
     </CategoryContext.Provider>
   );
 };
-
 
 export const useCategoryContext = () => {
   return useContext(CategoryContext);

@@ -1,14 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
-import { CartV2, Footer, Header, LeftSidebar } from './components/Gamer';
+import { CartV2, Footer, LeftSidebar } from './components/Gamer';
 import { GamerLayout, OrderServiceV2 } from './pages';
 import { Fragment } from 'react';
 
 function App() {
   return (
     <Fragment>
-      <Header />
+      {/* <Header /> */}
       <div
-        style={{ height: 'calc(100vh - 40px - 28px)' }}
+        style={{ height: 'calc(100vh - 40px)' }}
         className='flex justify-between overflow-y-hidden'
       >
         {/* Personal info + Navigation */}

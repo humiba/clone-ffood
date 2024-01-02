@@ -5,16 +5,19 @@ import { useCategoryContext } from '../../../../context/CategoryContext/Category
 
 export default function CategoryItemV2({ id, name }) {
   const { selectedCategoryId, setSelectedCategoryId } = useCategoryContext();
-  const categoryTextStyle = selectedCategoryId === id ? 'text-greenColor font-medium' : 'text-white hover:text-white/70';
-  const iconStyle =
+  const categoryTextStyle =
     selectedCategoryId === id
-      ? 'text-greenColor'
-      : 'text-[#636671]';
+      ? 'text-greenColor font-medium'
+      : 'text-grayColor hover:text-white/70';
+  const iconStyle =
+    selectedCategoryId === id ? 'text-greenColor' : 'text-[#636671]';
 
   return (
     <div
       className='flex gap-2 items-center cursor-pointer'
-      onClick={() => setSelectedCategoryId(id)}
+      onClick={() => {
+        setSelectedCategoryId(id);
+      }}
     >
       <RightOutlined className={iconStyle} />
       <p className={categoryTextStyle}>{name}</p>

@@ -6,10 +6,11 @@ export default function OrderServiceV2() {
     <div className='flex flex-col h-full w-full '>
       {/* Service name */}
       <div
-        className='py-4 px-4 m-3 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
+        className='py-6 px-4 m-3 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]'
         style={{
           backgroundImage: `url('https://cdn.culvers.com/nativeapp/mobile-hero-default.jpg')`,
           backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
         }}
       >
         <h2 className='uppercase font-bold text-lg'>Dịch vụ ăn uống</h2>
@@ -51,7 +52,7 @@ export default function OrderServiceV2() {
       {/* services */}
       <div className='flex mx-3 overflow-hidden'>
         {/* Search bar + categories menu */}
-        <div className='w-[30%] px-4'>
+        <div className='w-[25%]'>
           {/* Search bar */}
           <Search />
 

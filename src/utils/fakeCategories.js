@@ -15,12 +15,4 @@ export const fakeCategories = [
     id: 4,
     name: 'Thẻ game',
   },
-  {
-    id: 5,
-    name: 'Đồ uống pha chế',
-  },
-  {
-    id: 6,
-    name: 'Nước ngọt',
-  },
 ];

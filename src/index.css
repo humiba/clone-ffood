@@ -65,10 +65,13 @@ body {
   @apply text-[1.5rem];
 }
 
+.sidebarAction.active .anticon,
 .sidebarAction:hover .anticon {
   @apply text-greenColor;
 }
 
+.sidebarAction.active span,
 .sidebarAction:hover span {
   @apply text-whiteColor;
 }
+
